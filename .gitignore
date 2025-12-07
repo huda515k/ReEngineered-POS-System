@@ -96,8 +96,23 @@ htmlcov/
 *.tmp
 *.temp
 
-# Legacy system (optional - uncomment if you don't want to include legacy code)
-# Point-of-Sale-System-master/
+# Legacy system - exclude build artifacts and compiled files
+Point-of-Sale-System-master/bin/
+Point-of-Sale-System-master/src/*.class
+Point-of-Sale-System-master/nbproject/
+Point-of-Sale-System-master/*.jar
+Point-of-Sale-System-master/src.zip
+Point-of-Sale-System-master/Icon
+Point-of-Sale-System-master/Database/Icon
+Point-of-Sale-System-master/Documentation/*/Icon
+Point-of-Sale-System-master/Documentation/Icon
+Point-of-Sale-System-master/nbproject/Icon
+Point-of-Sale-System-master/Documentation/Final Release/jarFile.jar
+Point-of-Sale-System-master/SGTechnologies.jar
+
+# Java compiled files (global)
+*.class
+*.jar
 
 # Documentation build
 docs/_build/
