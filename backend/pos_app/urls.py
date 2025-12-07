@@ -7,10 +7,14 @@ from .views import (
     CreateSaleView, CreateRentalView, ProcessReturnView,
     GetOutstandingRentalsView
 )
+from .views.api_root_view import api_root
 
 app_name = 'pos_app'
 
 urlpatterns = [
+    # API root - shows available endpoints
+    path('', api_root, name='api-root'),
+    
     # Authentication
     path('auth/login/', LoginView, name='login'),
     path('auth/logout/', LogoutView, name='logout'),
