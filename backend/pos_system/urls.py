@@ -32,6 +32,7 @@ def api_root(request):
                 'create_sale': '/api/transactions/sale/',
                 'create_rental': '/api/transactions/rental/',
                 'process_return': '/api/transactions/return/',
+                'outstanding_rentals': '/api/transactions/outstanding-rentals/?customer_phone={phone}',
             },
             'admin': '/admin/',
         },
