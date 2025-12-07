@@ -168,10 +168,6 @@ Comprehensive documentation available in the `docs/` directory:
 - **Umer:** Phases 2, 4, 5, 7, 8 (Lead)
 - **Moawiz:** Phases 4, 6, 8, 9 (Lead)
 
-## 📝 License
-
-[Your License Here]
-
 ## 🙏 Acknowledgments
 
 This project demonstrates modern software reengineering practices, transforming legacy systems into maintainable, scalable applications.
