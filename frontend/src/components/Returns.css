@@ -1,0 +1,118 @@
+/* Desktop/Web Optimized Returns Styles */
+.returns-container {
+  padding: 1.5rem 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.returns-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: white;
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.returns-header h1 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rentals-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem;
+  margin-top: 1rem;
+}
+
+.rental-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rental-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+  transform: translateY(-1px);
+}
+
+.rental-item.selected {
+  border-color: #667eea;
+  background: #edf2f7;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.rental-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.rental-item-name {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rental-details {
+  font-size: 0.875rem;
+  color: #718096;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.overdue-badge {
+  background: #fed7d7;
+  color: #742a2a;
+  padding: 0.25rem 0.625rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.rental-checkbox {
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.rental-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .returns-container {
+    padding: 1rem;
+  }
+
+  .returns-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .returns-header h1 {
+    font-size: 1.25rem;
+  }
+}

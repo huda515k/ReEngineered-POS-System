@@ -1,0 +1,161 @@
+/* Desktop/Web Optimized Inventory Styles */
+.inventory-container {
+  padding: 1.5rem 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: white;
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.inventory-header h1 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.inventory-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #718096;
+  font-size: 1rem;
+}
+
+.search-bar .form-input {
+  padding-left: 2.75rem;
+}
+
+.inventory-table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.inventory-table-wrapper .table {
+  min-width: 100%;
+  font-size: 0.9rem;
+}
+
+.inventory-table-wrapper .table th {
+  white-space: nowrap;
+  padding: 0.875rem 1rem;
+  font-size: 0.85rem;
+}
+
+.inventory-table-wrapper .table td {
+  padding: 0.875rem 1rem;
+  vertical-align: middle;
+}
+
+.item-id-badge {
+  background: #e2e8f0;
+  color: #4a5568;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.price-badge {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.quantity-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.quantity-badge.high {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.quantity-badge.medium {
+  background: #feebc8;
+  color: #7c2d12;
+}
+
+.quantity-badge.low {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #718096;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+  color: #a0aec0;
+}
+
+.empty-state-text {
+  font-size: 1rem;
+  color: #718096;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inventory-container {
+    padding: 1rem;
+  }
+
+  .inventory-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .inventory-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .inventory-table-wrapper {
+    overflow-x: scroll;
+  }
+}
